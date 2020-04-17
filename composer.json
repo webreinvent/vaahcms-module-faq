@@ -1,0 +1,27 @@
+{
+    "name": "vaahcms/faq",
+    "description": "FAQ",
+    "authors": [
+        {
+            "name": "pradeep",
+            "email": "support@vaah.dev"
+        }
+    ],
+    "require": {
+        "php": "^7.0"
+    },
+    "extra": {
+        "laravel": {
+            "providers": [
+                "VaahCms\\Modules\\Faq\\Providers\\FaqServiceProvider"
+            ],
+            "aliases": {
+            }
+        }
+    },
+    "autoload": {
+        "psr-4": {
+            "VaahCms\\Modules\\Faq\\": ""
+        }
+    }
+}
