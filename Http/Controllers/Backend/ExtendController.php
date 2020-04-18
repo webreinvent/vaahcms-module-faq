@@ -14,7 +14,12 @@ class ExtendController extends Controller
     //----------------------------------------------------------
     public static function extendTopLeftMenu()
     {
-        $links = [];
+        $links = [
+            [
+                'link' => route('vh.backend.faq'),
+                'label'=> 'Logout'
+            ],
+        ];
         return $links;
     }
 

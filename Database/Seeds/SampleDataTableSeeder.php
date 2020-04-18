@@ -93,7 +93,8 @@ class SampleDataTableSeeder extends Seeder
     public function seedQuestions()
     {
         $list = $this->getListFromJson("questions.json");
-        $this->storeSeeds('vh_faq_questions', $list);
+        $this->storeSeeds('vh_faq_questions', $list, $primary_key='slug',
+            $create_slug=true, $create_slug_from='title');
     }
     //---------------------------------------------------------------
 
