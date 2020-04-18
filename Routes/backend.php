@@ -14,7 +14,7 @@
 Route::group(
     [
         'prefix'     => 'backend/faq',
-        'middleware' => ['web', 'has.backend.access']
+        'middleware' => ['web', 'has.backend.access'],
         'namespace' => 'Backend',
     ],
     function () {
