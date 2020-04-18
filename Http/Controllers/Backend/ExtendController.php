@@ -17,7 +17,7 @@ class ExtendController extends Controller
         $links = [
             [
                 'link' => route('vh.backend.faq'),
-                'label'=> 'Logout'
+                'label'=> 'Faq'
             ],
         ];
         return $links;
