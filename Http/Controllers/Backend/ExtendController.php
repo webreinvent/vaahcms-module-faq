@@ -20,14 +20,20 @@ class ExtendController extends Controller
                 'label'=> 'Faq'
             ],
         ];
-        return $links;
+
+        $response['status'] = 'success';
+        $response['data'] = $links;
+
+        return $response;
     }
 
     //----------------------------------------------------------
     public static function topRightUserMenu()
     {
-        $links = [];
-        return $links;
+        $response['status'] = 'success';
+        $response['data'] = [];
+
+        return $response;
     }
 
     //----------------------------------------------------------
