@@ -12,7 +12,7 @@ class ExtendController extends Controller
     {
     }
     //----------------------------------------------------------
-    public static function extendTopLeftMenu()
+    public static function topLeftMenu()
     {
         $links = [
             [
@@ -24,7 +24,7 @@ class ExtendController extends Controller
     }
 
     //----------------------------------------------------------
-    public static function extendTopRightUserMenu()
+    public static function topRightUserMenu()
     {
         $links = [];
         return $links;

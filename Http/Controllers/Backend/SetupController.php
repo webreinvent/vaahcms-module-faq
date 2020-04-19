@@ -28,6 +28,7 @@ class SetupController extends Controller
     {
 
         $response['status'] = 'success';
+        $response['data'] = [];
         return $response;
 
     }
@@ -39,6 +40,7 @@ class SetupController extends Controller
     {
 
         $response['status'] = 'success';
+        $response['data'] = [];
         return $response;
 
     }
@@ -50,6 +52,7 @@ class SetupController extends Controller
     {
 
         $response['status'] = 'success';
+        $response['data'] = [];
         return $response;
 
     }
