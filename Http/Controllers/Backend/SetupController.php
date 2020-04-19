@@ -53,4 +53,18 @@ class SetupController extends Controller
 
     }
 
+    /**
+     * Run when module is deleted
+     */
+    public static function dependencies()
+    {
+
+        $response['status'] = 'success';
+        $response['data']['modules'] = [];
+        $response['data']['themes'] = [];
+
+        return $response;
+
+    }
+
 }
