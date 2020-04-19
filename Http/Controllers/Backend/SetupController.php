@@ -17,6 +17,7 @@ class SetupController extends Controller
     public static function activate($module)
     {
         $response['status'] = 'success';
+        $response['data'] = $module;
         return $response;
     }
 
