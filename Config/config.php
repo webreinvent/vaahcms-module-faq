@@ -1,6 +1,6 @@
 <?php
 
-$config = array();
+$module_config = array();
 
 /*
 |--------------------------------------------------------------------------
@@ -11,7 +11,7 @@ $path = __DIR__."/../settings.json";
 if (File::exists($path)) {
     $file = File::get($path);
     $plugin_config = json_decode($file);
-    $config = (array)$plugin_config;
+    $module_config = (array)$plugin_config;
 }
 
 /*
@@ -22,6 +22,6 @@ if (File::exists($path)) {
 
 $modules_settings = [];
 
-$config = array_merge($config, $modules_settings);
+$module_config = array_merge($module_config, $modules_settings);
 
-return $config;
+return $module_config;
